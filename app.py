@@ -15,4 +15,4 @@ st.dataframe(total_sales_product.head(10))
 
 
 fig=px.bar(total_sales_product,x='Product Name',y='Sales')
-st.plotly_chart(fig,use_containerz-width=True)
+st.plotly_chart(fig,use_container-width=True)
