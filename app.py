@@ -14,5 +14,5 @@ total_sales_product=df[['Product Name','Sales']].groupby('Product Name').agg({'S
 st.dataframe(total_sales_product.head(10))
 
 
-fig=px.bar(total_sales_product,x='Product Name',y='Sales')
-st.plotly_chart(fig,use_container-width=True)
+fig=px.bar(total_sales_product,x='Product Name',y='Sales',orientation="h",color='Product Name')
+st.plotly_chart(fig,use_container_width=True)
